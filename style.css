@@ -1,0 +1,129 @@
+/* Style général */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f6fa;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+    background-color: #4c6ef5;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #ffffff;
+    color: #4c6ef5;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #e5e5e5;
+}
+
+/* Sections */
+.section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    border-left: 4px solid #4c6ef5;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+/* Cartes projets */
+.projects-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+/* Formulaire contact */
+.contact-form {
+    display: grid;
+    gap: 15px;
+    max-width: 500px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (min-width: 700px) {
+    .projects-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
